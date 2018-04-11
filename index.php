@@ -480,7 +480,7 @@ $( document ).ready(function() {
                                  </a>
                               </li>
                               <li data-reactid="336">
-                                 <a id="whatsapp" onclick="javascript:window.open('whatsapp://send?text=¡PaVos de Fortnite GRATIS!, ¡entra en está web para ayudarme!&url=https://fortnite-br.com/?id=fZdmUig1', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-index="1" target="_blank" rel="noopener noreferrer" data-reactid="337">
+                                 <a id="whatsapp" onclick="javascript:window.open('whatsapp://send?text=¡PaVos de Fortnite GRATIS!, ¡entra en está web para ayudarme! https://fortnite-br.com/?id=fZdmUig1', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-index="1" target="_blank" rel="noopener noreferrer" data-reactid="337">
                                     <div data-reactid="338"><i class="fa fa-whatsapp" data-reactid="339">&nbsp;</i></div>
                                  </a>
                               </li>
