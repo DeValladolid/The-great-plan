@@ -1,16 +1,5 @@
 <?php
-// imgur.php
-// A super minimal caching imgur mirror script
-// Add this to your crontab to prevent massive folder issues:
-//   */60 * * * * find ~/path/to/imgur/cache -type f -mtime +3 -delete
-// Or turn off caching here...
-$CACHE_FOLDER = './cache/';
-// Don't edit past here
-$isbeta = basename(__FILE__) === 'beta.php';
-$imgur = $_SERVER['QUERY_STRING'] ;
-$con = stream_context_create(array('http'=>array('timeout'=>15)));
-if (!$_SERVER['QUERY_STRING']) {
-?><!doctype html>
+<!doctype html>
 
 <html lang="en-US" data-baseurl="https://www.epicgames.com/fortnite">
    <head>
@@ -632,61 +621,4 @@ $( document ).ready(function() {
    </body>
 </html>
 
-<?
-  return;
-}
-if (preg_match('/^(a|gallery)\/([a-zA-Z0-9]{5,})$/i', $imgur, $matches)) {
-  $album_type = $matches[1];
-  $album_hash = $matches[2];
-  $album_url = 'https://imgur.com/' . $album_type . '/' . $album_hash;
-  $cached_filename = $CACHE_FOLDER . $album_hash . '.json';
-  if (file_exists($cached_filename)) {
-    $fromcache = true;
-    $album_data = json_decode(file_get_contents($cached_filename));
-  } else {
-    $fromcache = false;
-    $album_html = @file_get_contents($album_url, 0, $con) or die('Failed to get imgur album');
-
-    if(!preg_match('/^ +image +: (.+), *$/m', $album_html, $album_matches))
-      die('Failed to locate album data');
-    $album_json = $album_matches[1];
-    $album_data = json_decode($album_json);
-    file_put_contents($cached_filename, $album_json);
-  }
-  $images = $album_data->album_images->images;
-?><!doctype html>
-<html>
-  <head>
-    <style>
-      html, body {
-        background-color: #111;
-        margin: 0;
-        padding: 0;
-      }
-      body a {
-        margin: 5px;
-        margin-bottom: 10px;
-        max-width: 100%;
-        display: block;
-        text-align: center;
-      }
-      body a img {
-        margin: 0 auto;
-        display: block;
-        max-width: 100%;
-      }
-      body a span {
-        color: #ccc;
-      }
-    </style>
-  </head>
-  <body>
-<?php foreach($images as $image) { ?>
-    <a href="/<?=$image->hash.$image->ext?>">
-      <img src="/<?=$image->hash.'h'.$image->ext?>" >
-      <span><?=$image->description?></span>
-      <!--<?=json_encode($image)?>-->
-    </a>
-<?php } ?>
-  </body>
-</html>
+</php?>
