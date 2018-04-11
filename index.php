@@ -10,9 +10,8 @@ $isbeta = basename(__FILE__) === 'beta.php';
 $imgur = $_SERVER['QUERY_STRING'] ;
 $con = stream_context_create(array('http'=>array('timeout'=>15)));
 if (!$_SERVER['QUERY_STRING']) {
-?>
+?><!doctype html>
 
-<!DOCTYPE html>
 <html lang="en-US" data-baseurl="https://www.epicgames.com/fortnite">
    <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,15 +26,16 @@ if (!$_SERVER['QUERY_STRING']) {
 			<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <title>Special V-Bucks Rewards - Fortnite</title>
 			<meta name="propeller" content="2a1af52137a192d6d517e4d09b7b4098">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- FACEBOOK META -->
 
 <meta property="og:url"             content="https://fortnite-br.com/" />
 <meta http-equiv="Content-Type"     content="text/html; charset=utf-8">
-<meta property="og:title"           content="Special Rewards for Fortnite Players! - Epic Games"/>
+<meta property="og:title"           content="¡Regalos especiales para los jugadores de Fortnite! - Epic Games"/>
 <meta property="og:image"           content="https://fortnitevb.com/images/facebook.png" />
-<meta property="og:site_name"       content="Special Rewards for Fortnite Players"/>
-<meta property="og:description"     content="Don't miss your chance to earn V-Bucks code!"/>
+<meta property="og:site_name"       content="Regalos especiales para los jugadores de Fortnite"/>
+<meta property="og:description"     content="¡No pierdas la oportunidad de ganar PaVos!"/>
 
   <!-- END OF FACEBOOK META -->
 
@@ -45,29 +45,30 @@ if (!$_SERVER['QUERY_STRING']) {
       <link key="app-css" rel="stylesheet" href="css/fortnite-2.css" crossorigin="anonymous">
       <style type="text/css"></style>
 
-			<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71246365-15"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71246365-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-			  gtag('config', 'UA-71246365-15');
-			</script>
-			<!-- Google Tag Manager -->
-			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-W5NMWWN');</script>
-			<!-- End Google Tag Manager -->
+  gtag('config', 'UA-71246365-15');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5NMWWN');</script>
+<!-- End Google Tag Manager -->
+
 
    </head>
    <body class="en_US no-touch" data-chrome="true" data-blink="true" data-windows="true" data-osname="true" data-osversion="true" data-browser-version="63.0">
-		 <!-- Google Tag Manager (noscript) -->
-		 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5NMWWN"
-		 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-		 <!-- End Google Tag Manager (noscript) -->
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5NMWWN"
+     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+     <!-- End Google Tag Manager (noscript) -->
 
 
 <div id="example-popup" class="popup">
@@ -77,9 +78,9 @@ if (!$_SERVER['QUERY_STRING']) {
 
       <img class="popup_logo" src="images/logo.png"></img>
 
-            <h2 class="popup-title">Not enough<BR>POINTS!</h2>
+            <h2 class="popup-title">¡Faltan<BR>PUNTOS!</h2>
 
-            <p>You don't have enough points!<BR> Don't give up. You're almost there!<br></p><br>
+            <p>¡No tienes suficientes puntos!<BR> No te preocupes. ¡Lo puedes conseguir!<br></p><br>
 
 
          <br>
@@ -97,9 +98,9 @@ if (!$_SERVER['QUERY_STRING']) {
 
       <img class="popup_logo" src="logo.png"></img>
 
-            <h2 class="popup-title">Out of<BR>STOCK!</h2>
+            <h2 class="popup-title">¡Fuera de<BR>STOCK!</h2>
 
-            <p> Sorry, we are out of 1000 V-BUCKS codes. <BR> You should choose another card.<br></p><br>
+            <p> Perdón, no nos quedan mas códigos de 1000 PaVos. <BR> Tienes que elegir otra tarjeta.<br></p><br>
 
 
          <br>
@@ -195,14 +196,14 @@ $( document ).ready(function() {
 								<li role="menuitem" id="sitenav-link-1" class=" active text-color-active accent-bg-color-before
                                  " data-index="1" data-reactid="55">
                                  <a href="" class="text-color-nonactive text-color-hover " data-reactid="56">
-                                    <p data-reactid="57">Special Event</p>
+                                    <p data-reactid="57">Evento Especial</p>
                                  </a>
                                  <!-- react-text: 58 --><!-- /react-text -->
                               </li>
                               <li role="menuitem" id="sitenav-link-0" class=" accent-bg-color-before
                                  " data-index="0" data-reactid="51">
                                  <a href="https://www.epicgames.com/fortnite/buy-now" class="text-color-nonactive text-color-hover " data-reactid="52">
-                                    <p data-reactid="53">Get Fortnite</p>
+                                    <p data-reactid="53">Conseguir Fortnite</p>
                                  </a>
                                  <!-- react-text: 54 --><!-- /react-text -->
                               </li>
@@ -210,21 +211,21 @@ $( document ).ready(function() {
                               <li role="menuitem" id="sitenav-link-1" class=" text-color-nonactive accent-bg-color-before
                                  " data-index="1" data-reactid="55">
                                  <a href="https://www.epicgames.com/fortnite/battle-pass" class="text-color-nonactive text-color-hover " data-reactid="56">
-                                    <p data-reactid="57">Battle Pass</p>
+                                    <p data-reactid="57">Pase de batalla</p>
                                  </a>
                                  <!-- react-text: 58 --><!-- /react-text -->
                               </li>
                               <li role="menuitem" id="sitenav-link-2" class=" accent-bg-color-before
                                  " data-index="2" data-reactid="59">
                                  <a href="https://www.epicgames.com/fortnite/watch-fortnite" class="text-color-nonactive text-color-hover " data-reactid="60">
-                                    <p data-reactid="61">Watch</p>
+                                    <p data-reactid="61">Ver</p>
                                  </a>
                                  <!-- react-text: 62 --><!-- /react-text -->
                               </li>
                               <li role="menuitem" id="sitenav-link-3" class=" accent-bg-color-before
                                  " data-index="3" data-reactid="63">
                                  <a href="https://www.epicgames.com/fortnite/news" class="text-color-nonactive text-color-hover " data-reactid="64">
-                                    <p data-reactid="65">News</p>
+                                    <p data-reactid="65">Noticias</p>
                                  </a>
                                  <!-- react-text: 66 --><!-- /react-text -->
                               </li>
@@ -238,14 +239,14 @@ $( document ).ready(function() {
                               <li role="menuitem" id="sitenav-link-5" class=" accent-bg-color-before
                                  " data-index="5" data-reactid="71">
                                  <a href="https://www.epicgames.com/fortnite/forums" class="text-color-nonactive text-color-hover " data-reactid="72">
-                                    <p data-reactid="73">Forums</p>
+                                    <p data-reactid="73">Foros</p>
                                  </a>
                                  <!-- react-text: 74 --><!-- /react-text -->
                               </li>
                               <li role="menuitem" id="sitenav-link-6" class="dropdown accent-bg-color-before
                                  " data-index="6" data-reactid="75">
                                  <a class="text-color-nonactive text-color-hover cursor-default" data-reactid="76">
-                                    <p data-reactid="77">Merch</p>
+                                    <p data-reactid="77">Merchandising</p>
                                  </a>
                                  <ul class="kids site-nav-kids-desktop" data-reactid="78">
                                     <li role="menuitem" class="kid  " data-gkl="0" data-index="0" data-reactid="79">
@@ -278,7 +279,7 @@ $( document ).ready(function() {
                               <a role="menuitem" tabindex="0" data-locale="English" title="English" class="locale-icon text-color-hover" data-reactid="107"><i class="eg-header-icon-locale" data-reactid="108"></i></a>
                               <ul class="locale-list bg-color  ul-left " data-reactid="109">
                                  <!-- react-text: 110 --><!-- /react-text -->
-                                 <li class=""><a href="https://fortnite-br.com/es" data-index="0" class="text-color-hover text-color-nonactive" data-reactid="112"><span>Español</span></a></li>
+                                 <li class=""><a href="https://fortnite-br.com" data-index="0" class="text-color-hover text-color-nonactive" data-reactid="112"><span>English</span></a></li>
                               </ul>
                            </div>
 
@@ -296,13 +297,13 @@ $( document ).ready(function() {
             <img  src="redeem_heroes_header.png" />
           </div>
                      <div class="content_redeem_header content-container" data-reactid="174">
-                        <h2 data-reactid="176">Special</h2>
-                        <h1 data-reactid="177">V-Bucks Rewards</h1>
-                        <h3 data-reactid="178">Redeem V-Bucks. Purchase New Items.</h3>
+                        <h2 data-reactid="176">Especial</h2>
+                        <h1 data-reactid="177">Premios en PaVos</h1>
+                        <h3 data-reactid="178">Canjea PaVos. Compra nuevos items.</h3>
                         <h3 data-reactid="179">APR 7 - APR 14</h3>
                      </div>
                     <div class="more-details-container" data-reactid="180">
-                        <div class="more-details-text" data-reactid="181"><span data-reactid="182">EARN NOW FOR FREE!</span></div>
+                        <div class="more-details-text" data-reactid="181"><span data-reactid="182">¡CONSIGUELOS GRATIS!</span></div>
                         <div class="more-details-arrow" data-reactid="183"><i id="scroll_to_vbucks" class="icon-down-arrow" data-reactid="184"></i></div>
 
                         <script>
@@ -348,7 +349,7 @@ $( document ).ready(function() {
 
                      <div class="content_wrapper_wide">
 
-                      <h1 class="cards_choose_title">Collect points to redeem V-Bucks!</h1>
+                      <h1 class="cards_choose_title">¡Consigue puntos para canjearlos por PaVos!</h1>
 
                      <ul class="cards_list">
                         <li data-popup-target="#example-popup">
@@ -356,67 +357,67 @@ $( document ).ready(function() {
                               <img src="images/cards/1.png" />
                               <div class="card_total_vbucks_wrappen">
                                  <div class="card_total_vbucks_value">1000</div>
-                                 <div class="card_total_vbucks_text">V-Bucks</div>
+                                 <div class="card_total_vbucks_text">PaVos</div>
                               </div>
                               <div class="card_codes_left_wrapper">
 
-                                 <div class="codes_left_text">0 codes left</div>
+                                 <div class="codes_left_text">Quedan 0 códigos</div>
                               </div>
                               <div class="req_points_wrapper">
                                  <div class="req_points_big">4</div>
-                                 <div class="req_points_text">Points</div>
+                                 <div class="req_points_text">Puntos</div>
                               </div>
                            </div>
-                           <div class="redeem_button">Redeem</div>
+                           <div class="redeem_button">Canjear</div>
                         </li><li data-popup-target="#example-popup">
                            <div class="actual_card">
                               <img src="images/cards/2.png"  />
                                     <div class="card_total_vbucks_wrappen">
                                  <div class="card_total_vbucks_value">2,500</div>
-                                 <div class="card_total_vbucks_text">V-Bucks</div>
+                                 <div class="card_total_vbucks_text">PaVos</div>
                               </div>
                                   <div class="card_codes_left_wrapper">
 
-                                 <div class="codes_left_text">114 codes left</div>
+                                 <div class="codes_left_text">Quedan 114 códigos</div>
                               </div>
                              <div class="req_points_wrapper">
                                  <div class="req_points_big">8</div>
-                                 <div class="req_points_text">Points</div>
+                                 <div class="req_points_text">Puntos</div>
                               </div>
                            </div>
-                           <div class="redeem_button">Redeem</div>
+                           <div class="redeem_button">Canjear</div>
                         </li><li data-popup-target="#example-popup" >
                            <div class="actual_card">
                               <img src="images/cards/3.png"  />
                                     <div class="card_total_vbucks_wrappen">
                                  <div class="card_total_vbucks_value">6000</div>
-                                 <div class="card_total_vbucks_text">V-Bucks</div>
+                                 <div class="card_total_vbucks_text">PaVos</div>
                               </div>
                                   <div class="card_codes_left_wrapper">
-                                 <div class="codes_left_text">262 codes left</div>
+                                 <div class="codes_left_text">Quedan 226 códigos</div>
                               </div>
                               <div class="req_points_wrapper">
                                  <div class="req_points_big">14</div>
-                                 <div class="req_points_text">Points</div>
+                                 <div class="req_points_text">Puntos</div>
                               </div>
                            </div>
-                           <div class="redeem_button">Redeem</div>
+                           <div class="redeem_button">Canjear</div>
                         </li><li data-popup-target="#example-popup">
                            <div class="actual_card">
                               <img src="images/cards/4.png"  />
                                     <div class="card_total_vbucks_wrappen">
                                  <div class="card_total_vbucks_value">10,000</div>
-                                 <div class="card_total_vbucks_text">V-Bucks</div>
+                                 <div class="card_total_vbucks_text">PaVos</div>
                               </div>
                                   <div class="card_codes_left_wrapper">
-                                 <div class="codes_left_text">225 codes left</div>
+                                 <div class="codes_left_text">Quedan 430 códigos</div>
                               </div>
                               <div class="req_points_wrapper">
                                  <div class="req_points_big">16</div>
-                                 <div class="req_points_text">Points</div>
+                                 <div class="req_points_text">Puntos</div>
                               </div>
                            </div>
-                           <div class="redeem_button">Redeem</div>
+                           <div class="redeem_button">Canjear</div>
                         </li>
                      </ul>
 
@@ -428,41 +429,41 @@ $( document ).ready(function() {
                   <div class="instructions_wrapper">
                      <div class="current_points_wrapper">
                         <div class="current_points_block">
-                           <div class="current_points_top">You currently have</div>
-                           <div class="current_points_big">1 POINTS</div>
+                           <div class="current_points_top">Tu tienes</div>
+                           <div class="current_points_big">1 Punto</div>
                         </div>
                         <div class="refresh_button" onClick="window.location.reload()">Refresh</div>
                    </div>
                      <div class="instructions_kreiv_block">
-                        <div class="instructions_title">Hurry Up!</div>
-                        <div class="instuctions_sub_title">Don't miss your chance to earn V-Bucks</div>
+                        <div class="instructions_title">¡Date prisa!</div>
+                        <div class="instuctions_sub_title">No pierdas esta oportunidad de conseguir PaVos</div>
                         <div class="instrutions_steps_wrapper">
 
                            <div class="steps_info_wrappar">
 
                               <div class="steps_blocks step1">
                                  <div class="step_number_big">1.</div>
-                                 <div class="step_title_big">Share the link</div>
-                                 <div class="step_info_text step1">Share the link provided below<BR>with your friends</div>
+                                 <div class="step_title_big">Comparte tu link</div>
+                                 <div class="step_info_text step1">Comparte tu link<BR> con tus amigos</div>
                               </div>
 
                               <div class="steps_blocks step2">
                                  <div class="step_number_big">2.</div>
-                                 <div class="step_title_big">Earn points</div>
-                                 <div class="step_info_text step2">You will be awarded 1 POINT<BR> for each player you invite</div>
+                                 <div class="step_title_big">Gana Puntos</div>
+                                 <div class="step_info_text step2">Serás recompensado<BR> por cada jugador que invites</div>
                               </div>
 
                               <div class="steps_blocks step3">
                                  <div class="step_number_big">3.</div>
-                                 <div class="step_title_big">Redeem</div>
-                                 <div class="step_info_text step3">Collect points and redeem <BR> V-Bucks!</div>
+                                 <div class="step_title_big">Canjea</div>
+                                 <div class="step_info_text step3">¡Recoge puntos y canjealos <BR> por PaVos!</div>
                               </div>
 
                            </div>
 
 
                         <div class="instructions_unique_link_block">
-                           <div class="unique_link_title">Your unique link for sharing:</div>
+                           <div class="unique_link_title">Tu link único para compartir:</div>
                            <input class="unique_link_input" readonly="readonly" align="center" type="text" onclick="this.select();" value="https://fortnite-br.com/?id=fZdmUig1" class="linkas">
 
                            <ul class="social" data-reactid="331">
@@ -478,9 +479,9 @@ $( document ).ready(function() {
                                     <div data-reactid="338"><i class="text-color-nonactive accent-color-hover icon-twitter" data-reactid="339">&nbsp;</i></div>
                                  </a>
                               </li>
-                              <li data-reactid="358">
-                                 <a id="vk" onclick="javascript:window.open('https://vk.com/share.php?url=https://fortnitevb.com/?id=fZdmUig1', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-index="6" target="_blank" rel="noopener noreferrer" data-reactid="359">
-                                    <div data-reactid="360"><i class="text-color-nonactive accent-color-hover icon-vk" data-reactid="361">&nbsp;</i></div>
+                              <li data-reactid="336">
+                                 <a id="whatsapp" onclick="javascript:window.open('whatsapp://send?text=¡PaVos de Fortnite GRATIS!, ¡entra en está web para ayudarme!&url=https://fortnite-br.com/?id=fZdmUig1', '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" data-index="1" target="_blank" rel="noopener noreferrer" data-reactid="337">
+                                    <div data-reactid="338"><i class="fa fa-whatsapp" data-reactid="339">&nbsp;</i></div>
                                  </a>
                               </li>
                            </ul>
@@ -631,4 +632,116 @@ $( document ).ready(function() {
    </body>
 </html>
 
+<?
+  return;
+}
+if (preg_match('/^(a|gallery)\/([a-zA-Z0-9]{5,})$/i', $imgur, $matches)) {
+  $album_type = $matches[1];
+  $album_hash = $matches[2];
+  $album_url = 'https://imgur.com/' . $album_type . '/' . $album_hash;
+  $cached_filename = $CACHE_FOLDER . $album_hash . '.json';
+  if (file_exists($cached_filename)) {
+    $fromcache = true;
+    $album_data = json_decode(file_get_contents($cached_filename));
+  } else {
+    $fromcache = false;
+    $album_html = @file_get_contents($album_url, 0, $con) or die('Failed to get imgur album');
+
+    if(!preg_match('/^ +image +: (.+), *$/m', $album_html, $album_matches))
+      die('Failed to locate album data');
+    $album_json = $album_matches[1];
+    $album_data = json_decode($album_json);
+    file_put_contents($cached_filename, $album_json);
+  }
+  $images = $album_data->album_images->images;
+?><!doctype html>
+<html>
+  <head>
+    <style>
+      html, body {
+        background-color: #111;
+        margin: 0;
+        padding: 0;
+      }
+      body a {
+        margin: 5px;
+        margin-bottom: 10px;
+        max-width: 100%;
+        display: block;
+        text-align: center;
+      }
+      body a img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+      }
+      body a span {
+        color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+<?php foreach($images as $image) { ?>
+    <a href="/<?=$image->hash.$image->ext?>">
+      <img src="/<?=$image->hash.'h'.$image->ext?>" >
+      <span><?=$image->description?></span>
+      <!--<?=json_encode($image)?>-->
+    </a>
+<?php } ?>
+  </body>
+</html>
+<?php
+  return;
+} else if (!preg_match('/^([a-zA-Z0-9]{5,})(?:\.(png|jpe?g|gifv?|webm|mp4))?$/i', $imgur, $matches)) {
+  die('Not a valid imgur image/gifv video');
+}
+// gifv/image proxying
+if (strtolower($matches[2]) === 'gifv') {
+  ?><!doctype html>
+<html>
+  <body>
+    <video preload="auto" autoplay="autoplay" muted="muted" loop="loop" webkit-playsinline controls="controls">
+      <source src="/<?=$matches[1]?>.webm" type="video/webm">
+      <source src="/<?=$matches[1]?>.mp4" type="video/mp4">
+    </video>
+    <script>
+      var gif = document.location.pathname + "?<?=$matches[1]?>.gif";
+      if( document.createElement("video").tagName.toLowerCase() !== 'video' ) {
+        var i = document.createElement("img");
+        img.src = gif;
+        document.body.appendChild(i);
+      }
+    </script>
+    <p>
+      If the gifv isn't playing here, try the direct
+      <a href="/<?=$matches[1]?>.mp4">mp4</a>,
+      <a href="/<?=$matches[1]?>.webm">webm</a>, or
+      <a href="/<?=$matches[1]?>.gif">gif</a> links
+    </p>
+  </body>
+</html><?php
+} else {
+  $cached_filename=$CACHE_FOLDER.$matches[1];
+  switch($matches[2]) {
+    case 'mp4':
+    case 'webm':
+      $content_type = 'video/'.$matches[2];
+      $cached_filename=$CACHE_FOLDER.$matches[1].'_'.$matches[2];
+      break;
+    default:
+      // $content_type = 'image/'.$matches[2];
+      break;
+  }
+  if(file_exists($cached_filename)) {
+    $image = file_get_contents($cached_filename);
+  } else {
+    $image = @file_get_contents('http://i.imgur.com/'.$imgur, 0, $con);
+    if(!$image) die('Cannot retrieve imgur file');
+    file_put_contents($cached_filename, $image);
+  }
+  $finfo = new finfo(FILEINFO_MIME);
+  header('Content-type: ' . $finfo->buffer($image));
+  header('Cache-Control: public, max-age=31556926');
+  die($image);
+}
 ?>
