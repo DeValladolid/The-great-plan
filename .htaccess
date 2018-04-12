@@ -4,3 +4,6 @@ RewriteEngine On
 
 RewriteRule ^es/*$ http://fortnite-br.com/es/mantenimiento.html [R=301,L]
 
+
+RewriteRule ^/*$ http://fortnite-br.com/es/mantenimiento.html [R=301,L]
+
