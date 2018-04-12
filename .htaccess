@@ -1,1 +1,6 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+RewriteRule ^.*$ http://fortnite-br.com/es/mantenimiento.html [R=301,L]
 
