@@ -54,9 +54,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script><script src="//go.oclasrv.com/apu.php?zoneid=1638624" data-cfasync="false" async onerror="_mmbio()" onload="_wexsyh()"></script>
 	<!-- Finish season -->
 	<script type="text/javascript">
-    $(window).on('load',function(){
-        $('#end-season').modal('show');
-    });
+    function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('end-season').style.display = "none";
+    else document.getElementById('end-season').removeAttribute('style');
+}
+window.onload = function () {
+    setTimeout(function () {
+        PopUp('show');
+    }, 5000);
+}
 </script>
 	<!-- End Season -->
    </head>
